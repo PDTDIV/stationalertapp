@@ -38,6 +38,9 @@ document.getElementById('logoutButton').addEventListener('click', function() {
     // Show the login page and hide the alert page
     document.getElementById('loginPage').classList.remove('hidden');
     document.getElementById('alertPage').classList.add('hidden');
+
+    // Redirect to the login page
+    window.location.href = "index.html";
 });
 
 function sendAlert(username, alertType) {

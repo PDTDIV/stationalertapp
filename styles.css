@@ -1,37 +1,36 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f8f9fa; /* Light gray background */
 }
 
 .container {
-    position: relative; /* Ensure positioning context */
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px; /* Slightly rounded corners */
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
 }
 
 .button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 20px; /* Increased padding for better button appearance */
+    border-radius: 8px; /* Rounded button corners */
     cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
 #logoutButton {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
 }
-
 
 .hidden {
     display: none;
@@ -44,10 +43,11 @@ body {
 }
 
 .alert-card {
-    border-radius: 10px;
+    border-radius: 15px; /* Slightly rounded corners */
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
 }
 
 .alert-card img {
@@ -65,5 +65,6 @@ body {
 }
 
 .alert-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly increased shadow on hover */
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Admin</h1>
+    </div>
+    <!-- Message box from users with reply button -->
+    <div id="userMessages">
+        <!-- User messages will be displayed here -->
+    </div>
+    <button id="logoutButton">Logout</button>
+
+        <!-- Emergency message to login page -->
+        <div>
+            <label for="emergencyLoginMessage">Emergency Message to Login Page:</label>
+            <textarea id="emergencyLoginMessage" rows="3" cols="50"></textarea>
+            <button id="sendEmergencyLoginMessage">Send</button>
+        </div>
+        <!-- Emergency message to individual/multiple users -->
+        <div>
+            <label for="selectedUsers">Select Users:</label>
+            <select id="selectedUsers" multiple>
+                <!-- Options will be populated dynamically -->
+            </select>
+            <label for="emergencyUserMessage">Emergency Message to Users:</label>
+            <textarea id="emergencyUserMessage" rows="3" cols="50"></textarea>
+            <button id="sendEmergencyUserMessage">Send</button>
+        
+
+    <script src="admin.js"></script> <!-- Include your JavaScript file -->
+</body>
+</html>

@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Apply mobile-first approach */
 @media only screen and (max-width: 600px) {
     /* Adjust container width */
@@ -23,6 +21,34 @@
     /* Adjust message container padding */
     #userMessages {
         padding: 10px;
+    }
+
+    /* Adjust input fields */
+    input[type="text"], input[type="password"] {
+        width: calc(100% - 40px);
+        padding: 12px 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    /* Adjust login button */
+    button {
+        width: calc(100% - 40px);
+        padding: 12px 20px;
+        margin: 10px 0;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #0056b3;
     }
 }
 
@@ -67,7 +93,6 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-/* styles.css */
 
 /* Adjust logout button color */
 #logoutButton {
@@ -82,7 +107,6 @@ button:hover {
 #logoutButton:hover {
     background-color: #c82333; /* Change to your desired hover color */
 }
-/* styles.css */
 
 /* Adjust button styles for mobile application format */
 .alert-button {

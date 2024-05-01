@@ -127,3 +127,19 @@ button:hover {
 .alert-button:hover {
     background-color: #0056b3; /* Button background color on hover */
 }
+/* Remove overflow: hidden; from body */
+body {
+    height: 100%;
+    /* overflow: hidden; */ /* Remove this line */
+}
+
+/* Show scrollbar */
+::-webkit-scrollbar {
+    display: auto; /* Change to auto to show scrollbar */
+}
+
+/* Make messages scrollable */
+#userMessages {
+    overflow-y: auto;
+    max-height: 80vh; /* Limit max height to enable scrolling */
+}
